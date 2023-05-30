@@ -1,0 +1,301 @@
+{
+	"info": {
+		"_postman_id": "11a34ed8-6df2-46ee-a966-6a28b3dd0b96",
+		"name": "Menu",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27672153"
+	},
+	"item": [
+		{
+			"name": "MenuCorrectPrintTest",
+			"item": [
+				{
+					"name": "AddNotAvaliableDish",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"role\" : \"manager\",\r\n    \"name\" : \"seledka\",\r\n    \"description\" : \"Очень вкусная селедка!\",\r\n    \"price\" : \"80\",\r\n    \"quantity\" : \"0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/menu/add/dish",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"menu",
+								"add",
+								"dish"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetMenuRequest3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/menu",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"menu"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GetMenuRequest1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/menu",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"menu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddDishRequest1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"role\" : \"manager\",\r\n    \"name\" : \"Grechka\",\r\n    \"description\" : \"Очень вкусная гречиха!\",\r\n    \"price\" : \"80\",\r\n    \"quantity\" : \"10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/menu/add/dish",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"menu",
+						"add",
+						"dish"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddDishRequest2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"role\" : \"manager\",\r\n    \"name\" : \"Olivie\",\r\n    \"description\" : \"Лучший салат!\",\r\n    \"price\" : \"150\",\r\n    \"quantity\" : \"20\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/menu/add/dish",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"menu",
+						"add",
+						"dish"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetMenuRequest2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/menu",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"menu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RemoveDishRequest1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"role\" : \"manager\",\r\n    \"name\" : \"Olivie\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/menu/delete/dish",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"menu",
+						"delete",
+						"dish"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetMenuRequest3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/menu",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"menu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddSameDishRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"role\" : \"manager\",\r\n    \"name\" : \"Grechka\",\r\n    \"description\" : \"Очень вкусная гречиха!\",\r\n    \"price\" : \"80\",\r\n    \"quantity\" : \"10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/menu/add/dish",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"menu",
+						"add",
+						"dish"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RemoveNotExistDishRequest",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"role\" : \"manager\",\r\n    \"name\" : \"KabachkovayaIkra\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/menu/delete/dish",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"menu",
+						"delete",
+						"dish"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RemoveWithNotEnoughRights",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"role\" : \"customer\",\r\n    \"name\" : \"Grechka\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/menu/delete/dish",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"menu",
+						"delete",
+						"dish"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

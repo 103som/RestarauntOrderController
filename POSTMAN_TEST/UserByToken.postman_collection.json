@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "538294d9-0f42-4584-9708-7a6cb6196973",
+		"name": "UserByToken",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27672153"
+	},
+	"item": [
+		{
+			"name": "Request1",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Request2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjg2NjA5NjU1LCJleHAiOjE2ODY2MTMyNTV9.1k8FkkJ6t8I5vYrHKHMmceDnUaQ8RfRyM0CHIsWEwW9QFIIMG-FpJfK4FV6bg3V0ebG-0WXwAjCBq--fl-xgcQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/info",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request3",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJqbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjg2NjA5NjU1LCJleHAiOjE2ODY2MTMyNTV9.1k8FkkJ6t8I5vYrHKHMmceDnUaQ8RfRyM0CHIsWEwW9QFIIMG-FpJfK4FV6bg3V0ebG-0WXwAjCBq--fl-xgcQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/info",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request4",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "sdasdasdsaddsasadads",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/info",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"info"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "1ed2ec15-4e4a-4150-8e32-365f55d24fea",
+		"name": "Order",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27672153"
+	},
+	"item": [
+		{
+			"name": "Test1",
+			"item": [
+				{
+					"name": "AddOrderRequest",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user_id\": 1,\r\n  \"dish_count\": 1,\r\n  \"dish_list\": [\"Grechka\"],\r\n  \"special_requests\": \"Особые пожелания\",\r\n  \"status\": \"waiting\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/create/order",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"create",
+								"order"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
